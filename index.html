@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Title</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Performance impact of passing Window.opener</h1>
+    <div>
+      <a href="./index.html" target="_blank" rel="opener" class="btn"
+        >Open in New Tab</a
+      >
+    </div>
+    <div class="container">
+      <button type="button" id="exclusive" class="btn">
+        Exclusive thread for 10 seconds
+      </button>
+    </div>
+    <div class="container">
+      <button type="button" id="increment" class="btn">+1</button>
+      <span id="count" class="count"> 0 </span>
+    </div>
+  </body>
+</html>
